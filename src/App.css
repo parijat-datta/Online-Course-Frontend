@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.main {
+    background: linear-gradient(273deg, #ff00c8, #02d494, #ec2c00);
+    background-size: 600% 600%;
+
+    -webkit-animation: MyAnimation 7s ease infinite;
+    -moz-animation: MyAnimation 7s ease infinite;
+    animation: MyAnimation 7s ease infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@-webkit-keyframes MyAnimation {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-moz-keyframes MyAnimation {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@keyframes MyAnimation {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-web{
+    background-color:lightgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cart{
+    background-image: linear-gradient(180deg,lightgrey,black);
+  
+    height: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.courseDesign{
+    
+   display:flex;float: left;flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+
+}
+
+.head h5{
+    font-weight: 800;
+}
+
+.headImage{
+    width: 10%;
 }
